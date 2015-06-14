@@ -8,9 +8,6 @@ public class DigestCoder {
 
     private final MessageDigest md;
 
-    /**
-     * 可选值为：MD2, MD5, SHA-1, SHA-256, SHA-384, SHA-512
-     */
     public DigestCoder(String algorithm) {
         try {
             md = MessageDigest.getInstance(algorithm);
